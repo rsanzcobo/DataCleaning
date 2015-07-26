@@ -50,7 +50,7 @@ Hay un total de 66 + 4 variables:
   </li>
 </ul>
 
-Al final se obtiene un juego de datos con la siguiente estructura
+Durante el procesado de las distintas fuentes de datos se obtiene un juego de datos con la siguiente estructura
 
 <table>
   <tr>
@@ -59,3 +59,5 @@ Al final se obtiene un juego de datos con la siguiente estructura
     <tr>
   <td> 1</td>  <td>WALKING</td>      <td>12</td>     <td>0.2160924</td>         <td>-4.176104e-03</td> <td> ... </td> <td>-0.43997979</td> <td>Test</td>
   </table>
+  
+  Este juego de datos mediante la grupación por Subject y Activity se obtiene el juego de datos ordenado, que contrendrá las 66 variables más 2 variables correspondientes a Subject y Activity. En el ejemplo salen menos de las 66 variables por haber trabajado con un juego de datos más pequeño, pero ejecutando el script se obtendría lo descrito.
