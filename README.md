@@ -18,7 +18,7 @@ La funcionalidad del Script es incompleta.  El estado de cada punto es el siguie
   <li>Appropriately labels the data set with descriptive variable names.(NO OK)</li>
 </ul>
 
-<b>Variables</li>
+<b>Variables</b>
 
 Hay un total de 66 + 4 variables:
 
