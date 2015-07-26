@@ -26,22 +26,24 @@ Hay un total de 66 + 4 variables:
 
   <li><b>Variables de Medición (66)</b>: Como nombre de las variables se ha escogido los propios de las fuentes de datos originales, para que puedan ser identificadas rpaidamente por los participantes en el curso. Junto a las 66 variables (tBodyAcc-mean()-X, , tBodyAcc-mean()-Y, tBodyAcc-mean()-Z...) que se encuentran descritas en el documento <b>features.txt</b>.Concretmente se han cogido la variables con los siguientes ids: 1,2,3,4,5,6,41,42,43,44,45,46,81,82,83,84,85,86,121,122,123,124,125,126,161,162,163,164,165,166,201,202,214,215,227,228, 240,241,253,254,266,267,268,269,270,271,345,346,	347,348,349,350,424,425,426,427,428,429,503,504,516,517,529,530,542,543.</li>
 
-  <li><b>ActivityID</b>, que hace referencia al ID de cada actividad medida.</li>
+  <li><b>ActivityID</b>, que hace referencia al ID de cada actividad medida. Valores del 1 al 5</li>
 
-  <li><b>Activity</b>, que hace alusión a las 6 actividades medidas, es decir:
+  <li><b>Activity</b>, que hace alusión a las 6 actividades medidas, es decir:<p>
   
     WALKING<br>
     WALKING_UPSTAIRS<br>
     WALKING_DOWNSTAIRS<br>
     SITTING, STANDING<br>
-    LAYING.</li>
+    LAYING</p>
+  </li>
 
-  <li><b>Subject</b>, que hace alusión al sujeto que ha realizado la actividad. Los valores val del 1 al 30</li>
+  <li><b>Subject</b>, que hace alusión al sujeto que ha realizado la actividad. Los valores van del 1 al 30</li>
 
-  <li><b>TestTrain</b> Hace referencia a si la medición puede ser:<br>
+  <li><b>TestTrain</b> Hace referencia a si la medición puede ser:<p>
   
       "Test"<br>
-      "Train"</li>
+      "Train"</p>
+  </li>
 </ul>
 
 Al final se obtiene un juego de datos con la siguiente estructura
