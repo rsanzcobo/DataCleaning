@@ -9,13 +9,13 @@ Las fuentes de datos se encuentran en el siguiente documento ZIP:
 
 El Script se encuentra en el archivo .R denominando <b>run_analysis.R</b>. Para ejecutarlo es necesario indicar donde se encuentra la carpeta "UCI HAR Dataset" como path, por ejemplo <u>run_analysis("./UCI HAR Dataset")</u> si la carpeta se encuentra en nuestra carpeta de trabajo.
 
-La funcionalidad del Script es incompleta.  El estado de cada punto es el siguiente. En verde se codifica aquel que se ha conseguido y en rojo el que no.
+El estado de cada punto del ejercico es el siguiente:
 
 <ul>
   <li>Merges the training and the test sets to create one data set.(OK)</li>
   <li>Extracts only the measurements on the mean and standard deviation for each measurement. (OK)</li>
   <li>Uses descriptive activity names to name the activities in the data set (OK)</li>
-  <li>Appropriately labels the data set with descriptive variable names.(NO OK)</li>
+  <li>Appropriately labels the data set with descriptive variable names.(OK)</li>
 </ul>
 
 <b>Variables</b>
