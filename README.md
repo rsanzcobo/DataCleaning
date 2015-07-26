@@ -11,20 +11,26 @@ El Script se encuentra en el archivo .R denominando <b>run_analysis.R</b>. Para 
 
 La funcionalidad del Script es incompleta.  El estado de cada punto es el siguiente. En verde se codifica aquel que se ha conseguido y en rojo el que no.
 
-<font color="green">Merges the training and the test sets to create one data set.</font>
-<span color="green">Extracts only the measurements on the mean and standard deviation for each measurement.</span>
+<ul>
+  <li>Merges the training and the test sets to create one data set.(OK)</li>
+  <li>Extracts only the measurements on the mean and standard deviation for each measurement. (OK)</li>
+  <li>Uses descriptive activity names to name the activities in the data set (OK)</li>
+  <li>Appropriately labels the data set with descriptive variable names.(NO OK)</li>
+</ul>
 
+<b>Variables</li>
 
-Como nombre de las variables se ha escogido los propios de las fuentes de datos originales, para que puedan ser identificadas rpaidamente por los participantes en el curso. Junto a las 66 variables (tBodyAcc-mean()-X, , tBodyAcc-mean()-Y, tBodyAcc-mean()-Z...) que se encuentran descritas en el documento <b>features.txt</b>.Concretmente se han cogido la variables con los siguientes ids: 1,2,3,4,5,6,41,42,43,44,45,46,81,82,83,84,85,86,121,122,123,124,125,126,161,162,163,164,165,166,201,202,214,215,227,228, 240,241,253,254,266,267,268,269,270,271,345,346,	347,348,349,350,424,425,426,427,428,429,503,504,516,517,529,530,542,543.
-
-Adicional a esas variables en el dataset se han incorporado <b>4 variables más</b>:
+Hay un total de 66 + 4 variables:
 
 <ul>
 
-<li><b>ActivityID</b>, que hace referencia al ID de cada actividad medida.</li>
+  <li><b>Variables de Medición (66)</b>: Como nombre de las variables se ha escogido los propios de las fuentes de datos originales, para que puedan ser identificadas rpaidamente por los participantes en el curso. Junto a las 66 variables (tBodyAcc-mean()-X, , tBodyAcc-mean()-Y, tBodyAcc-mean()-Z...) que se encuentran descritas en el documento <b>features.txt</b>.Concretmente se han cogido la variables con los siguientes ids: 1,2,3,4,5,6,41,42,43,44,45,46,81,82,83,84,85,86,121,122,123,124,125,126,161,162,163,164,165,166,201,202,214,215,227,228, 240,241,253,254,266,267,268,269,270,271,345,346,	347,348,349,350,424,425,426,427,428,429,503,504,516,517,529,530,542,543.</li>
 
-<li><b>Activity</b>, que hace alusión a las 6 actividades medidas, es decir WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING.</li>
+  <li><b>ActivityID</b>, que hace referencia al ID de cada actividad medida.</li>
 
-<li><b>Subject</b>, que hace alusión al sujeto que ha realizado la actividad.</li>
+  <li><b>Activity</b>, que hace alusión a las 6 actividades medidas, es decir WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING.</li>
 
-<li><b>TestTrain</b> Hace referencia a si la medición es de Test o de Train</li>
+  <li><b>Subject</b>, que hace alusión al sujeto que ha realizado la actividad.</li>
+
+  <li><b>TestTrain</b> Hace referencia a si la medición es de Test o de Train</li>
+</ul>
