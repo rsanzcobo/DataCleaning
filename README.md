@@ -28,11 +28,20 @@ Hay un total de 66 + 4 variables:
 
   <li><b>ActivityID</b>, que hace referencia al ID de cada actividad medida.</li>
 
-  <li><b>Activity</b>, que hace alusión a las 6 actividades medidas, es decir WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING.</li>
+  <li><b>Activity</b>, que hace alusión a las 6 actividades medidas, es decir:
+  
+    WALKING<br>
+    WALKING_UPSTAIRS<br>
+    WALKING_DOWNSTAIRS<br>
+    SITTING, STANDING<br>
+    LAYING.</li>
 
-  <li><b>Subject</b>, que hace alusión al sujeto que ha realizado la actividad.</li>
+  <li><b>Subject</b>, que hace alusión al sujeto que ha realizado la actividad. Los valores val del 1 al 30</li>
 
-  <li><b>TestTrain</b> Hace referencia a si la medición es de Test o de Train</li>
+  <li><b>TestTrain</b> Hace referencia a si la medición puede ser:<br>
+  
+      "Test"<br>
+      "Train"</li>
 </ul>
 
 Al final se obtiene un juego de datos con la siguiente estructura
