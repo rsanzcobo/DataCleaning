@@ -11,7 +11,7 @@ El Script se encuentra en el archivo .R denominando <b>run_analysis.R</b>. Para 
 
 La funcionalidad del Script es incompleta.  El estado de cada punto es el siguiente. En verde se codifica aquel que se ha conseguido y en rojo el que no.
 
-<span color="green">Merges the training and the test sets to create one data set.</span>
+<font color="green">Merges the training and the test sets to create one data set.</font>
 <span color="green">Extracts only the measurements on the mean and standard deviation for each measurement.</span>
 
 
