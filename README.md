@@ -1,5 +1,5 @@
 # DataCleaning
-I apologize because I write mu comments in Spanish, my mother language.
+I apologize because I write my comments in Spanish, my mother language.
 
 Proyecto del Curso de obtención y limpieza de datos.
 
