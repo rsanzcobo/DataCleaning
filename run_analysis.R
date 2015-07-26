@@ -22,10 +22,18 @@ run_analysis <- function(path){
   dfxTest <- read.fwf("./test/X_test.txt", longitudes)
   
   #Cogemos todas las mediciones de mean() y std()
-  dfxTest <- dfxTest[c(1,2,3,4,5,6,41,42,43,44,45,46,81,82,83,84,85,86,121,122,123,124,125,126,161,162,163,164,165,166,201,202,214,215,227,228,240,241,253,254,266,267,268,269,270,271,345,346,	347,348,349,350,424,425,426,427,428,429,503,504,516,517,529,530,542,543)]
+  dfxTest <- dfxTest[mediciones]
+  
+  #Cojo el nombre de las variables que queremos utilizar
+  features <- read.table("features.txt")
+  features <- features[mediciones,2]
+  
+  #Asignamos el nombre a cada variable
+  names(dfxTest) <- features
 
   #Cogemos los sujetos
   dfsubjectsTest <- read.table("./test/subject_test.txt")
+  names(dfsubjectsTest) <- c("subject")
   
   #Fusionamos los dos data frame creados
   dfsubject_X_test <- cbind.data.frame(dfsubjectsTest,dfxTest)
@@ -56,16 +64,24 @@ run_analysis <- function(path){
   
   ##### Vamos a hacer lo mismo para la parte de Training ######
   
+  print("Procesamos Training")
+  
   #Cogemos los datos de Test
   
   #Primero cogemos las medidas
   dfxTrain <- read.fwf("./train/X_train.txt", longitudes)
 
   #Cogemos todas las mediciones de mean() y std()
-  dfxTrain <- dfxTest[c(1,2,3,4,5,6,41,42,43,44,45,46,81,82,83,84,85,86,121,122,123,124,125,126,161,162,163,164,165,166,201,202,214,215,227,228,240,241,253,254,266,267,268,269,270,271,345,346,	347,348,349,350,424,425,426,427,428,429,503,504,516,517,529,530,542,543)]
+  dfxTrain <- dfxTrain[mediciones]
+  
+  #Asignamos el nombre a las variables
+  names(dfxTrain) <- features
   
   #Cogemos los sujetos
   dfsubjectsTrain <- read.table("./train/subject_train.txt")
+  
+  #Asignamos nombre a la variable
+  names(dfsubjectsTrain) <- c("subject")
   
   #Fusionamos los dos data frame creados
   dfsubject_X_train <- cbind.data.frame(dfsubjectsTrain,dfxTrain)
@@ -103,4 +119,6 @@ run_analysis <- function(path){
   #Fusionamos los dos data set.
   dfDataSet <- rbind.data.frame(dfTestDataSet,dfTrainDataSet)
   
+  #Devolvemos el data set
+  dfDataSet
 }
