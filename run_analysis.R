@@ -119,12 +119,13 @@ run_analysis <- function(path){
   #Fusionamos los dos data set.
   dfDataSet <- rbind.data.frame(dfTestDataSet,dfTrainDataSet)
   
-  dfDataSet[sort(subject, activity)]
+  #Agrupamos por Subject y Activity
+  group <- group_by(dfDataSet,subject, Activity)
   
-  #Calculamos el juego de datos ordenado
-  tidy_dataset <- dcast(dfDataSet, subject + Activity ~ features[c(1:66)],mean)
+  #Calculamos la media a cada agrupación
+  tidy_dataset <- summarise_each(group, funs(mean))
   
-  #Devolvemos el juevo de datos ordenado
+  #Devolvemos el juego de datos ordenado
   tidy_dataset
   
 }
