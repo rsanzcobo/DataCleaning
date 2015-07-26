@@ -42,5 +42,5 @@ Al final se obtiene un juego de datos con la siguiente estructura
     <td>activityID</td>  <td>Activity</td>  <td>subject</td> <td>tBodyAcc-mean()-X</td>  <td>tBodyAcc-mean()-Y</td> <td>...</td> <td>fBodyBodyGyroJerkMag-std()</td>  <td>TestTrain</td>
     </tr>
     <tr>
-  <td> 1</td>        <td>WALKING</td>      <td>12</td>     <td>0.2160924</td>         <td>-4.176104e-03</td> <td>-0.43997979</td> <td>Test</td>
+  <td> 1</td>  <td>WALKING</td>      <td>12</td>     <td>0.2160924</td>         <td>-4.176104e-03</td> <td> ... </td> <td>-0.43997979</td> <td>Test</td>
   </table>
