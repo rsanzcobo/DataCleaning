@@ -33,7 +33,8 @@ Hay un total de 66 + 4 variables:
     WALKING<br>
     WALKING_UPSTAIRS<br>
     WALKING_DOWNSTAIRS<br>
-    SITTING, STANDING<br>
+    SITTING<br>
+    STANDING<br>
     LAYING</p>
   </li>
 
