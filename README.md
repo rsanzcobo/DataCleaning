@@ -34,3 +34,8 @@ Hay un total de 66 + 4 variables:
 
   <li><b>TestTrain</b> Hace referencia a si la medición es de Test o de Train</li>
 </ul>
+
+Al final se obtiene un juego de datos con la siguiente estructura
+
+activityID  Activity  subject tBodyAcc-mean()-X  tBodyAcc-mean()-Y ... fBodyBodyGyroJerkMag-std()  TestTrain
+   1        WALKING      12     0.2160924         -4.176104e-03
